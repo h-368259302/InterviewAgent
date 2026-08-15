@@ -72,6 +72,7 @@ class QuestionPlannerAgent(BaseAgent):
             plan = plan[:total]
         elif len(plan) < total and len(plan) > 0:
             # 不足时重复最后一题的结构补位（极少发生）
+            #不足时以有多少算多少
             self.logger.warning(f"LLM 只生成了 {len(plan)} 题，期望 {total} 题，截断使用")
 
         # 规范化字段
