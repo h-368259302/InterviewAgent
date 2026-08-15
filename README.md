@@ -1,10 +1,5 @@
 # InterviewAgent · AI 模拟面试官
 
-> ⚠️ **本项目不是原创项目**，而是基于
-> [BMN-zyb/AI_InterviewerAgent](https://github.com/BMN-zyb/AI_InterviewerAgent)
-> 的 **魔改 / 二次开发版本**，原项目作者为「北木南」。
-> 本仓库在原项目基础上进行了个性化修改，版权与核心代码归属原作者。
-
 <div align="center">
 
 <img src="./images/面试过程.png" alt="AI 模拟面试流程" width="720">
@@ -20,7 +15,6 @@
 ## 目录
 
 - [项目简介](#项目简介)
-- [来源声明](#来源声明)
 - [功能特性](#功能特性)
 - [技术栈与依赖](#技术栈与依赖)
 - [环境准备](#环境准备)
@@ -41,20 +35,6 @@ JD 解析 -> 简历分析 -> RAG 题库检索 -> 智能出题 -> 多轮面试 ->
 ```
 
 项目采用多 Agent DAG 协作、RAG 多路召回 + LLM 精排、短期/长期记忆、动态难度调节等设计，并提供 CLI、REST API、WebSocket 与 Web 界面多种使用方式。
-
-## 来源声明
-
-本项目基于 [BMN-zyb/AI_InterviewerAgent](https://github.com/BMN-zyb/AI_InterviewerAgent) 魔改而来，非独立原创项目。
-
-- 原项目仓库：https://github.com/BMN-zyb/AI_InterviewerAgent
-- 原项目作者：北木南
-- 本仓库用途：个人二次开发 / 魔改学习版本
-
-当前相对原项目的主要改动：
-
-- `agents/question_planner.py`：补充题目数量不足时的处理说明注释。
-
-本仓库会持续基于原项目进行个性化修改，如需原版功能，请直接使用原项目。
 
 ## 功能特性
 
@@ -282,4 +262,4 @@ pytest
 
 ## License
 
-本项目基于 [BMN-zyb/AI_InterviewerAgent](https://github.com/BMN-zyb/AI_InterviewerAgent) 修改而来，版权归原作者所有。原项目 README 标注为 MIT License，本仓库未附带 LICENSE 文件，使用前请以原项目授权为准。
+本项目参考了 [AI_InterviewerAgent](https://github.com/BMN-zyb/AI_InterviewerAgent)。
